@@ -1,0 +1,54 @@
+$layout-breakpoint-small: 900px;
+
+.offerCardContainer {
+  max-width: 738px;
+  .showMore {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.offerCard {
+  display: flex;
+  @media (max-width: $layout-breakpoint-small)  {
+    display:block;    
+  }
+  background: white;
+  justify-content: center;
+  &-hotelImage {
+    @media (max-width: $layout-breakpoint-small)  {
+      width: 100%; 
+    }
+    width: 60%;
+    position: relative;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-hotelInfo {
+    @media (max-width: $layout-breakpoint-small)  {
+      width: auto;
+    }
+    padding: 20px;
+    width: 40%;
+  }
+}
+.hotelDescription {
+  background: white;
+  padding: 15px 20px;
+
+
+  h3 {
+    color: #1a3381;
+    font-size: 14px;
+    margin: none;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
